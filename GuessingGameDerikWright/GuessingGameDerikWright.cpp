@@ -12,8 +12,8 @@ int main()
 {
 	srand(static_cast<unsigned int>(time(0)));	//seed random number generator
 	int secretNumber = rand() % 100 + 1;		//random number between 1 and 100
-	int tries = 0;
-	int guess;
+	int tries = 0;								//recoords number of tries
+	int guess;									//records number of guesses
 
 	cout <<"\tWelcome to Guess My Number \n\n";
 
@@ -35,7 +35,7 @@ int main()
 			}
 			else
 			{
-				cout << "\nThat's it! You go it in " << tries << "guesses!\n";
+				cout << "\nThat's it! You go it in " << tries << " guesses!\n";
 			}
 		} while (guess != secretNumber);
 
